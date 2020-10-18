@@ -13,6 +13,11 @@ displayDate();
 // save time blocks into localStorage
 var loadTasks = function() {
     tasks = JSON.parse(localStorage.getItem("tasks"));
+
+    $(".text-input").each(function () {
+        var time = $(this).attr("id");
+        $(this).text(tasks[time] || '')
+    })
 }
 
 
