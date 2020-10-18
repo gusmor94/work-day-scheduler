@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css"/>
     <title>Work Day Scheduler</title>
   </head>
@@ -24,11 +25,11 @@
           <div class="col-1 border-top">
             9AM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="9">
+            <p class="h-100 w-100 text-input" id="9"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="9" class="btn btn-block"></button>
           </div>
         </div>
       </div>
@@ -37,11 +38,11 @@
           <div class="col-1 border-top">
             10AM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="10">
+            <p class="h-100 w-100 text-input" id="10"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="10" class="btn btn-block"></button>
           </div>
         </div>
       </div>
@@ -50,11 +51,11 @@
           <div class="col-1 border-top">
             11AM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="11">
+            <p class="h-100 w-100 text-input" id="11"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="11" class="btn btn-block"></button>
           </div>
         </div>
       </div>
@@ -63,11 +64,11 @@
           <div class="col-1 border-top">
             12PM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="12">
+            <p class="h-100 w-100 text-input" id="12"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="12" class="btn btn-block"></button>
           </div>
         </div>
       </div>
@@ -76,11 +77,11 @@
           <div class="col-1 border-top">
             1PM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="13">
+            <p class="h-100 w-100 text-input" id="13"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="13" class="btn btn-block"></button>
           </div>
         </div>
       </div>
@@ -89,11 +90,11 @@
           <div class="col-1 border-top">
             2PM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="14">
+            <p class="h-100 w-100 text-input" id="14"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="14" class="btn btn-block"></button>
           </div>
         </div>
       </div>
@@ -102,11 +103,11 @@
           <div class="col-1 border-top">
             3PM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="15">
+            <p class="h-100 w-100 text-input" id="15"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="15" class="btn btn-block"></button>
           </div>
         </div>
       </div>
@@ -115,11 +116,11 @@
           <div class="col-1 border-top">
             4PM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="16">
+            <p class="h-100 w-100 text-input" id="16"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="16" class="btn btn-block"></button>
           </div>
         </div>
       </div>
@@ -128,11 +129,11 @@
           <div class="col-1 border-top">
             5PM
           </div>
-          <div class="col-10 border">
-            One of three columns
+          <div class="col-10 border time-text" id="time-text" data-time="17">
+            <p class="h-100 w-100 text-input" id="17"> </p>
           </div>
-          <div class="col-1 bg-info">
-            save
+          <div class="col-1 bg-info rounded-right">
+            <button type="button" id="17" class="btn btn-block"></button>
           </div>
         </div>
       </div>
