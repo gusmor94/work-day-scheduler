@@ -51,7 +51,23 @@ $(".time-text").on("blur", "textarea", function() {
 })
 
 // color code time blocks for past, present, or future
-
+var auditHour = function() {
+    // find p element's ID
+    var currentHour = moment().hour();
+    $(".time-text").each(function() {
+        var hour = $(this).data("time");
+        if(hour < currentHour) {
+            $(this).addClass("bg-secondary");
+        }
+        else if(hour === currentHour) {
+            $(this).addClass("bg-danger");
+        }
+        else if(hour > currentHour) {
+            $(this).addClass("bg-success");
+        }
+    })
+}
+auditHour();
 
 // load saved time blocks
 loadTasks();
