@@ -1,4 +1,4 @@
-tasks = {};
+var tasks = JSON.parse(localStorage.getItem("tasks")) || {};
 
 // display current day at top of calendar
 var displayDate = function() {
@@ -12,7 +12,7 @@ displayDate();
 
 // save time blocks into localStorage
 var loadTasks = function() {
-    tasks = JSON.parse(localStorage.getItem("tasks"));
+    tasks = JSON.parse(localStorage.getItem("tasks")) || {};
 
     $(".text-input").each(function () {
         var time = $(this).attr("id");
@@ -25,7 +25,6 @@ var saveTasks = function() {
     
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-
 
 // edit time blocks
 $(".time-text").on("click", "p", function() {
